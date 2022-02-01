@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 AncientRoms
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -9,19 +10,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common PixelExperience stuff
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_USES_AOSP_RECOVERY := true
+# Inherit some common AncientRoms stuff
+ANCIENT_OFFICIAL ?= true
+ANCIENT_GAPPS ?= true
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_USES_BLUR := true
+PIXEL_STUFF := true
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Inherit from NB1 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-PRODUCT_NAME := aosp_NB1
+PRODUCT_NAME := ancient_NB1
 PRODUCT_DEVICE := NB1
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
