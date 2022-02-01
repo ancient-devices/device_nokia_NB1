@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "github",
+    "repository": "ancient-devices/vendor_nokia_NB1",
+    "target_path": "vendor/nokia/NB1",
+    "branch": "twelve"
+  },
+  {
+    "remote": "github",
+    "repository": "ancient-devices/kernel_nokia_msm8998",
+    "target_path": "kernel/nokia/msm8998",
+    "branch": "next-12.0"
+  },
+  {
+    "remote": "github",
+    "repository": "GPUCode/android_hardware_qcom_display",
+    "target_path": "hardware/qcom-caf/msm8998/display",
+    "branch": "lineage-18.1-caf-msm8998"
+  },
+  {
+    "remote": "github",
+    "repository": "GPUCode/android_hardware_qcom_media",
+    "target_path": "hardware/qcom-caf/msm8998/media",
+    "branch": "lineage-18.1-caf-msm8998"
+  },
+  {
+    "remote": "github",
+    "repository": "PixelExperience/hardware_qcom-caf_msm8998_audio",
+    "target_path": "hardware/qcom-caf/msm8998/audio",
+    "branch": "twelve"
+  }
+]
