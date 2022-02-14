@@ -13,20 +13,8 @@
   },
   {
     "remote": "github",
-    "repository": "GPUCode/android_hardware_qcom_display",
-    "target_path": "hardware/qcom-caf/msm8998/display",
-    "branch": "lineage-18.1-caf-msm8998"
-  },
-  {
-    "remote": "github",
-    "repository": "GPUCode/android_hardware_qcom_media",
-    "target_path": "hardware/qcom-caf/msm8998/media",
-    "branch": "lineage-18.1-caf-msm8998"
-  },
-  {
-    "remote": "github",
-    "repository": "PixelExperience/hardware_qcom-caf_msm8998_audio",
-    "target_path": "hardware/qcom-caf/msm8998/audio",
-    "branch": "twelve"
+    "repository": "ancient-devices/NB1_hals",
+    "target_path": "hardware/qcom-caf/msm8998",
+    "branch": "main"
   }
 ]
